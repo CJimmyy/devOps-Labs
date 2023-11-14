@@ -1,0 +1,15 @@
+version: '3'
+services:
+  redis:
+    image: redis
+  web:
+    # COMPLETE HERE
+    build: .
+    ports:
+      - "5000:8080"
+    environment:
+      # ...
+      - REDIS_HOST=redis  # Use the service name as the host to connect to the Redis service
+      - REDIS_PORT=6379  # Set the port for the Redis service
+    depends_on:
+      - redis
