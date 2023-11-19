@@ -2,6 +2,8 @@ version: '3'
 services:
   redis:
     image: redis
+    volumes:
+      - redis_data:/data
   web:
     # COMPLETE HERE
     build: .
@@ -13,3 +15,5 @@ services:
       - REDIS_PORT=6379  # Set the port for the Redis service
     depends_on:
       - redis
+volumes:
+    redis_data: {}
