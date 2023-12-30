@@ -98,12 +98,11 @@ It will start a web server available in your browser at <http://localhost:5000>
 
 # Kubernetes / Storage-Kubernetes Module
 
-It is a web application web application exposing REST API that count how many times an user visit the web page and stores it in Redis database
+It is a web application web application 
 
 ## Functionality
 
 1. Start a web server
-2. Count how many times the page is visited
 
 ## Installation
 
